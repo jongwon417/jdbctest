@@ -53,7 +53,7 @@ class Member{
         }
         public Member build(){
             if(userid == null || username == null || age == 0)
-                throw new IllegalStateException("»ý¼º¾ÈµÊ");
+                throw new IllegalStateException("Â»Ã½Â¼ÂºÂ¾ÃˆÂµÃŠ");
             return new Member(userid, username, age);
         }
 
@@ -65,7 +65,7 @@ public class jdbc {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
         
-        //Member mem = new Member("°¡", "³ª", 1);
+        //Member mem = new Member("Â°Â¡", "Â³Âª", 1);
         //System.out.println(mem.getAge());
         
         
@@ -101,5 +101,6 @@ public class jdbc {
         if(rs != null) rs.close();
         if(stmt != null) stmt.close();
         if(con != null) con.close();
+	System.out.println("ì§€ë°œ!");
     }    
 }
